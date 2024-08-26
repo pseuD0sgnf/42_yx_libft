@@ -82,7 +82,7 @@ char	**ft_split(char const *s, char c)
 	{
 		strs[i_strs] = ft_do_split(s, c, &i_str);
 		if (!strs[i_strs])
-			return ft_failed(strs);
+			return (ft_failed(strs));
 		i_strs++;
 	}
 	return (strs);
